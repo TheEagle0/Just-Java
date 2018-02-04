@@ -117,7 +117,7 @@
             android:layout_marginStart="8dp"
             android:text="@string/chocolate"
             android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:padding="18dp"/>
 
 
         <TextView
@@ -148,8 +148,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_margin="8dp"
             android:onClick="submitOrder"
             android:text="@string/order"
             android:textColor="@android:color/black" />

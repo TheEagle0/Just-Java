@@ -10,9 +10,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.net.URI;
-import java.text.NumberFormat;
-
 /**
  * This app displays an order form to order coffee.
  */
@@ -33,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initViews();
+    }
+
+    private void initViews() {
         priceTextView = findViewById(R.id.price_text_view);
         quantityTextView = findViewById(R.id.quantity_text_view);
         checkBox = findViewById(R.id.checkbox);
@@ -85,14 +86,6 @@ public class MainActivity extends AppCompatActivity {
     private void displayQuantity(int number) {
 
         quantityTextView.setText("" + number);
-    }
-
-    /**
-     * This method displays the given price on the screen.
-     */
-    private void displayPrice(int number) {
-        TextView priceTextView = findViewById(R.id.price_text_view);
-        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
 
 
